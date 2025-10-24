@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 data/*
-fast_api/*
+yt-chrome-plugin-frontend/*
 
 # Distribution / packaging
 .Python
