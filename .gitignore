@@ -206,3 +206,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+/tfidf_vectorizer.pkl
+/lgbm_model.pkl
+/experiment_info.json
