@@ -89,7 +89,7 @@ jobs:
         run: |
           docker pull ${{ secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
 
-      # 🧹 Added: Safely stop and remove any existing cnncls container
+      # Safely stop and remove any existing cnncls container
       - name: Stop and remove old container (if exists)
         run: |
           docker stop cnncls || true
