@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY . /app
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y libgomp1
+
 # Install git and other essentials before pip install
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
